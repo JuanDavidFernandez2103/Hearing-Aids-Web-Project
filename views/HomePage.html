@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/razerLogo.svg" type="image/x-icon">
     <link rel="stylesheet" href="/styles/Style.css">
     <title>Razer</title>
 </head>
@@ -13,9 +14,18 @@
     <main>
         <section class="content-article">
             <article class="img-article">
+                <aside class="dot-selector" id="dot-selector">
+                    <div class="wheel" id="wheel">
+                        <div class="space"></div>
+                        <button class="color-dot dot-red"></button>
+                        <button class="color-dot dot-white"></button>
+                        <button class="color-dot dot-Black"></button>
+                        <div class="space"></div>
+                    </div>
+                </aside>
                 <picture>
-                    <source sizes="1920w" srcset="/assets/img/Opus-Photoroom.png 1920w" type="image/png">
-                    <img loading="lazy" decoding="async" src="/assets/img/Opus-Photoroom.png" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="/assets/img/Barracuda-Red.png" lazyalt="imagen"
+                        id="product-image">
                 </picture>
                 <div class="info">
                     <p class="product-sound">Sonido Profesional</p>
@@ -31,6 +41,7 @@
         </section>
     </main>
     <script src="/js/layoutLoader.js"></script>
+    <script src="/js/Homepage.js"></script>
 </body>
 
 </html>
