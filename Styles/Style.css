@@ -4,13 +4,13 @@
 
     --primario: #1073ba;
     --secundario: #00da55;
-    --gris: #747474;
+    --gris: #E0E0E0;
     --blanco: #ffffff;
     --negro: #1f1e1e;
     --grisClaro: #e1e1e1;
     --separacion: 5rem;
 
-    --colorRazer: #44D62C;
+    --colorRazer: #60C030;
 }
 
 * {
@@ -89,6 +89,7 @@ img {
     width: auto;
     margin-left: 7rem;
     margin-right: 7rem;
+    filter: drop-shadow(0 0 2px var(--colorRazer));
 }
 
 /* Navigation Bar */
@@ -113,21 +114,22 @@ img {
 .content-article {
     display: flex;
     justify-content: center;
-    background: var(--negro);
+    background: white;
 }
 
 .img-article img {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
 .img-article {
     align-items: center;
-    background: var(--negro);
+    background: linear-gradient(45deg, var(--colorRazer) 0%, var(--negro)70%);
     color: var(--blanco);
     display: flex;
-    width: 90%;
+    width: 100%;
     height: 100vh;
+    padding: 5rem;
 }
 
 .dot-selector {
@@ -211,7 +213,20 @@ img {
 
 .gradient {
     color: transparent;
-    background: linear-gradient(to right, var(--gris) 0%, var(--colorRazer)100%);
+    background: var(--gris);
     -webkit-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--fuenteSecundaria);
+    font-size: 900;
+}
+
+.btn-buy{
+    border: none;
+    width: 20rem;
+    padding: 1rem;
+    background: var(--colorRazer);
+    color: var(--blanco);
+    border-radius: 0.5rem;
+    margin-top: 5rem;
 }
